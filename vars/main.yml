@@ -1,2 +1,18 @@
 ---
 # vars file for ansible-windows-iis
+[linux-server]
+192.168.159.140
+192.168.159.141
+
+
+[win]
+192.168.159.139
+192.168.159.1
+
+
+[win:vars]
+ansible_user=pkumar
+ansible_password=Ap29g3830
+ansible_connection=winrm
+ansible_winrm_transport: ntlm
+ansible_winrm_server_cert_validation=ignore
